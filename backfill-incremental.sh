@@ -4,8 +4,8 @@
 # no harm running it for days that you already have backfilled for
 # there will just be no new articles to download, but the next time 
 # through the loop it will go back 24 hours more
-
 daysago=8
+
 IFS="
 "
 while :;
