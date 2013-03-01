@@ -1,12 +1,12 @@
 #!/bin/sh
 daysago=0
 maxdays=356
-TODAY=`date +%Y%m%d`
-optimisef=/tmp/optimise.${TODAY}
 IFS="
 "
 while :;
 do
+        optimisef=/tmp/optimise.${TODAY}
+        TODAY=`date +%Y%m%d`
         chmod -R 777  /var/www/newznab/nzbfiles
         mydate=`date --date="${daysago} days ago" +"%Y-%m-%d"`
         echo "--------------------------------------------------------"
