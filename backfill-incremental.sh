@@ -23,6 +23,8 @@ do
                 php optimise_db.php
                 touch $otimisef
         fi
+        cd /var/www/newznab/misc/testing
+        php update_parsing.php
         #echo "sleeping for 30 min"
         #sleep 1800
         echo "sleeping for 30 sec"
