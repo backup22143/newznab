@@ -1,4 +1,8 @@
 #!/bin/sh
+#
+# this is meant to be run in screen/tmux not from cron
+#
+
 daysago=0
 maxdays=356
 IFS="
