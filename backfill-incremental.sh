@@ -16,8 +16,9 @@ do
         echo "--------------------------------------------------------"
         echo "backfilling $group to $mydate"
         cd /var/www/newznab/misc/update_scripts
-        php backfill_date.php $mydate
-        php update_binaries.php
+        #php backfill_date.php $mydate
+        php backfill_threaded_date.php $mydate
+        php update_binaries_threaded.php
         php update_releases.php
         if [ ! -f $otimisef ] ; then
                 php optimise_db.php
